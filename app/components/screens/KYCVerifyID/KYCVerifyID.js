@@ -18,6 +18,8 @@ import {
   ALL_PERMISSIONS,
   requestForPermission,
 } from "../../../utils/device-permissions";
+import { getColor } from "../../../utils/styles-util";
+import { COLOR_KEYS } from "../../../constants/COLORS";
 
 @connect(
   state => ({
@@ -136,15 +138,24 @@ class KYCVerifyID extends Component {
     if (active) {
       return (
         <>
-          <CelText color={STYLES.COLORS.DARK_GRAY} type="H4" weight="300">
+          <CelText
+            color={getColor(COLOR_KEYS.TOGGLE_OFF_BACKGROUND)}
+            type="H4"
+            weight="300"
+          >
             {textActive}
           </CelText>
-          <Icon name="CheckCircle" fill={STYLES.COLORS.GREEN} height="24" />
+          <Icon
+            name="CheckCircle"
+            fill={getColor(COLOR_KEYS.POSITIVE_STATE)}
+            height="24"
+          />
         </>
       );
     }
     return (
       <>
+        {/* TODO: missing COLOR_KEYS */}
         <CelText color={STYLES.COLORS.DARK_GRAY} type="H4" weight="300">
           {textInactive}
         </CelText>
@@ -233,11 +244,11 @@ class KYCVerifyID extends Component {
                   >
                     <Icon
                       height="24"
-                      fill={STYLES.COLORS.CELSIUS_BLUE}
+                      fill={getColor(COLOR_KEYS.PRIMARY_BUTTON)}
                       name={document.icon}
                     />
                     <CelText
-                      color={STYLES.COLORS.CELSIUS_BLUE}
+                      color={getColor(COLOR_KEYS.PRIMARY_BUTTON)}
                       margin="10 0 0 0"
                       align="center"
                       type="H6"
@@ -257,6 +268,7 @@ class KYCVerifyID extends Component {
                       name={document.icon}
                       fill={STYLES.COLORS.GRAY}
                     />
+                    {/* TODO: missing COLOR_KEYS*/}
                     <CelText
                       color={STYLES.COLORS.GRAY}
                       margin="10 0 0 0"

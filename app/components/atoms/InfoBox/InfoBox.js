@@ -11,9 +11,10 @@ import {
   heightPercentageToDP,
   widthPercentageToDP,
   getPadding,
+  getColor,
 } from "../../../utils/styles-util";
 import CelText from "../CelText/CelText";
-import STYLES from "../../../constants/STYLES";
+import { COLOR_KEYS } from "../../../constants/COLORS";
 
 class InfoBox extends Component {
   static propTypes = {
@@ -104,7 +105,7 @@ class InfoBox extends Component {
                   name="WarningCircle"
                   height="29"
                   width="29"
-                  fill={STYLES.COLORS.WHITE}
+                  fill={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
                 />
               </View>
             )}
@@ -163,7 +164,11 @@ class InfoBox extends Component {
                 }}
               >
                 {explanationText}{" "}
-                <CelText type={"H5"} weight={"700"} color={STYLES.COLORS.WHITE}>
+                <CelText
+                  type={"H5"}
+                  weight={"700"}
+                  color={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
+                >
                   {boldText}
                 </CelText>
               </CelText>

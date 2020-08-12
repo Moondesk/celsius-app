@@ -3,7 +3,6 @@ import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from "../../../utils/styles-util";
-import STYLES from "../../../constants/STYLES";
 
 const base = {
   container: {
@@ -28,23 +27,11 @@ const base = {
 };
 
 const themed = {
-  light: {
-    separatorColor: {
-      color: "black",
-    },
-  },
+  light: {},
 
-  dark: {
-    separatorColor: {
-      color: STYLES.COLORS.WHITE_OPACITY2,
-    },
-  },
+  dark: {},
 
-  unicorn: {
-    separatorColor: {
-      color: "black",
-    },
-  },
+  unicorn: {},
 };
 
 const CommunityDashboardStyle = () => getThemedStyle(base, themed);
