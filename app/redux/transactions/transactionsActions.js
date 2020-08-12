@@ -82,7 +82,6 @@ function getTransactionDetails(id = "") {
   return async dispatch => {
     try {
       dispatch(startApiCall(API.GET_TRANSACTION_DETAILS));
-
       if (!mocks.USE_MOCK_TRANSACTIONS) {
         const res = await transactionsService.getTransaction(id);
         dispatch(getTransactionDetailsSuccess(res.data.transaction));

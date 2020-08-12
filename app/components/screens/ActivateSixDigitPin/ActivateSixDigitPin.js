@@ -13,7 +13,8 @@ import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
 import CelButton from "../../atoms/CelButton/CelButton";
 import Card from "../../atoms/Card/Card";
 import Icon from "../../atoms/Icon/Icon";
-import STYLES from "../../../constants/STYLES";
+import { getColor } from "../../../utils/styles-util";
+import { COLOR_KEYS } from "../../../constants/COLORS";
 
 @connect(
   state => ({
@@ -84,18 +85,22 @@ class ActivateSixDigitPin extends Component {
   renderInfoBox = () => {
     const style = ActivateSixDigitPinStyle();
     return (
-      <Card color={STYLES.COLORS.GREEN}>
+      <Card color={getColor(COLOR_KEYS.POSITIVE_STATE)}>
         <View style={style.infoBoxWrapper}>
           <View style={style.infoBoxIconWrapper}>
             <Icon
               name={"CheckCircle"}
               width="25"
               height="25"
-              fill={STYLES.COLORS.WHITE}
+              fill={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
             />
           </View>
           <View style={style.infoBoxTextWrapper}>
-            <CelText type={"H5"} weight={"300"} color={STYLES.COLORS.WHITE}>
+            <CelText
+              type={"H5"}
+              weight={"300"}
+              color={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
+            >
               Successfully activated new 6-Digits PIN code
             </CelText>
           </View>

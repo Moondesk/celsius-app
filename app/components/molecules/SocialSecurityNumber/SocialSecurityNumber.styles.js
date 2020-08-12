@@ -41,18 +41,18 @@ const base = {
 const themed = {
   light: {
     nationalID: {
-      backgroundColor: STYLES.COLORS.WHITE,
+      backgroundColor: STYLES.COLORS.WHITE, // TODO: missing COLOR_KEYS
     },
   },
   dark: {
     taxID: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER,
+      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO: missing COLOR_KEYS
     },
     nationalID: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER,
+      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO: missing COLOR_KEYS
     },
     inputCel: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER,
+      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO: missing COLOR_KEYS
     },
   },
 

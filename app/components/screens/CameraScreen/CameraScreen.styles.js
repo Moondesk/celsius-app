@@ -25,7 +25,7 @@ const base = {
   bottomView: {
     position: "absolute",
     bottom: 0,
-    backgroundColor: STYLES.COLORS.WHITE,
+    backgroundColor: COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND,
     ...Platform.select({
       ios: {
         width: "100%",
@@ -49,19 +49,19 @@ const base = {
 const themed = {
   light: {
     maskOverlayColor: {
-      backgroundColor: "rgba(241,239,238,0.6)",
+      backgroundColor: "rgba(241,239,238,0.6)", // TODO: add COLOR_KEYS
     },
   },
 
   dark: {
     maskOverlayColor: {
-      backgroundColor: STYLES.COLORS.DARK_OVERLAY,
+      backgroundColor: STYLES.COLORS.DARK_OVERLAY, // TODO: add COLOR_KEYS
     },
   },
 
   unicorn: {
     maskOverlayColor: {
-      backgroundColor: "rgba(241,239,238,0.6)",
+      backgroundColor: "rgba(241,239,238,0.6)", // TODO: add COLOR_KEYS
     },
   },
 };

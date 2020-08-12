@@ -387,7 +387,7 @@ class ConfirmYourLoan extends Component {
                   </CelText>
                 </View>
               </View>
-
+              {/* // TODO: missing COLOR_KEY */}
               <Card noBorder color={STYLES.COLORS.WHITE_OPACITY1}>
                 <View style={style.horizontalCardContainer}>
                   <View style={style.horizontalCardItem}>
@@ -446,7 +446,7 @@ class ConfirmYourLoan extends Component {
                   </View>
                 </View>
               </Card>
-
+              {/* // TODO: missing COLOR_KEY */}
               <Card noBorder color={STYLES.COLORS.WHITE_OPACITY1}>
                 <View style={style.horizontalCardContainer}>
                   <View style={style.horizontalCardItem}>

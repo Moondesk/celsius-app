@@ -1,6 +1,6 @@
 import { Dimensions } from "react-native";
-import STYLES from "../../../constants/STYLES";
 import { getThemedStyle } from "../../../utils/styles-util";
+import { COLOR_KEYS } from "../../../constants/COLORS";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
@@ -19,7 +19,7 @@ const base = {
     marginTop: 10,
   },
   activeImage: {
-    borderColor: STYLES.COLORS.GREEN,
+    borderColor: COLOR_KEYS.POSITIVE_STATE,
     width: smallImageSize,
     height: smallImageSize,
     zIndex: -20,

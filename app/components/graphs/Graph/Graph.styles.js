@@ -59,33 +59,28 @@ const base = {
     bottom: 0,
     right: 0,
   },
+  cursorBackgroundColor: {
+    backgroundColor: COLOR_KEYS.CARDS,
+  },
+  labelBoxBackgroundColor: {},
 };
 
 const themed = {
   light: {
-    cursorBackgroundColor: {
-      backgroundColor: "white",
-    },
     labelBoxBackgroundColor: {
-      backgroundColor: STYLES.COLORS.DARK_GRAY,
+      backgroundColor: STYLES.COLORS.DARK_GRAY, // TODO: missing COLOR_KEY
     },
   },
 
   dark: {
-    cursorBackgroundColor: {
-      backgroundColor: STYLES.COLORS.DARK_BACKGROUND,
-    },
     labelBoxBackgroundColor: {
-      backgroundColor: STYLES.COLORS.DARK_LABEL,
+      backgroundColor: STYLES.COLORS.DARK_LABEL, // TODO: missing COLOR_KEY
     },
   },
 
   unicorn: {
-    cursorBackgroundColor: {
-      backgroundColor: "white",
-    },
     labelBoxBackgroundColor: {
-      backgroundColor: STYLES.COLORS.DARK_GRAY,
+      backgroundColor: STYLES.COLORS.DARK_GRAY, // TODO: missing COLOR_KEY
     },
   },
 };

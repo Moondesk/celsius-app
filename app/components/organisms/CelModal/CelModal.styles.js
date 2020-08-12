@@ -5,6 +5,7 @@ import {
   widthPercentageToDP,
 } from "../../../utils/styles-util";
 import STYLES from "../../../constants/STYLES";
+import { COLOR_KEYS } from "../../../constants/COLORS";
 
 const { width } = Dimensions.get("window");
 
@@ -81,7 +82,7 @@ const base = {
     width: widthPercentageToDP("90%"),
     height: heightPercentageToDP("15.5%"),
     paddingTop: 5,
-    backgroundColor: STYLES.COLORS.LIGHT_GRAY,
+    backgroundColor: COLOR_KEYS.DOT_INDICATOR_INACTIVE,
     alignItems: "center",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
@@ -120,7 +121,7 @@ const base = {
     paddingTop: 20,
     paddingHorizontal: 10,
     paddingBottom: 10,
-    color: STYLES.COLORS.DARK_GRAY,
+    color: COLOR_KEYS.SEPARATORS,
   },
   description: {
     paddingHorizontal: 10,
@@ -131,7 +132,7 @@ const base = {
   },
   modalButton: {
     marginTop: 0,
-    backgroundColor: STYLES.COLORS.CELSIUS_BLUE,
+    backgroundColor: COLOR_KEYS.PRIMARY_BUTTON,
   },
   dotsWithdraw: {
     flex: 1,
