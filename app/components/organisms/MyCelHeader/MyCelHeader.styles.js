@@ -1,4 +1,3 @@
-import STYLES from "../../../constants/STYLES";
 import {
   getThemedStyle,
   widthPercentageToDP,
@@ -41,52 +40,9 @@ const base = {
 };
 
 const themed = {
-  light: {
-    minPercentage: {
-      backgroundColor: STYLES.COLORS.WHITE, // TODO create COLOR_KEYS and check all themes
-    },
-    bonus: {
-      backgroundColor: STYLES.COLORS.WHITE, // TODO create COLOR_KEYS and check all themes
-    },
-    loan: {
-      backgroundColor: STYLES.COLORS.WHITE, // TODO create COLOR_KEYS and check all themes
-    },
-    separator: {
-      backgroundColor: STYLES.COLORS.MEDIUM_GRAY3, // TODO create COLOR_KEYS and check all themes
-    },
-    tierSilver: {
-      backgroundColor: STYLES.COLORS.MEDIUM_GRAY, // TODO create COLOR_KEYS and check all themes
-    },
-  },
+  light: {},
 
-  dark: {
-    minPercentage: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO create COLOR_KEYS and check all themes
-    },
-    bonus: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO create COLOR_KEYS and check all themes
-    },
-    loan: {
-      backgroundColor: STYLES.COLORS.DARK_HEADER, // TODO create COLOR_KEYS and check all themes
-    },
-    separator: {
-      backgroundColor: "rgb(95,105,122)", // TODO create COLOR_KEYS and check all themes
-    },
-    tierSilver: {
-      borderColor: "#000", // TODO create COLOR_KEYS and check all themes
-      borderRightWidth: 2,
-    },
-    tierGold: {
-      borderColor: "#000", // TODO create COLOR_KEYS and check all themes
-      borderRightWidth: 2,
-    },
-    tierPlatinum: {
-      borderColor: "#000", // TODO create COLOR_KEYS and check all themes
-    },
-    tierWrapper: {
-      borderBottomColor: "#000", // TODO create COLOR_KEYS and check all themes
-    },
-  },
+  dark: {},
 
   unicorn: {},
 };

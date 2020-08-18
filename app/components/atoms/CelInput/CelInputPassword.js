@@ -120,9 +120,9 @@ class CelInputPassword extends Component {
                       borderRightWidth: 10,
                       borderBottomWidth: 10,
                       borderStyle: "solid",
-                      backgroundColor: "transparent",
-                      borderLeftColor: "transparent",
-                      borderRightColor: "transparent",
+                      backgroundColor: COLOR_KEYS.TRANSPARENT,
+                      borderLeftColor: COLOR_KEYS.TRANSPARENT,
+                      borderRightColor: COLOR_KEYS.TRANSPARENT,
                       borderBottomColor: getColor(
                         COLOR_KEYS.CIRCLE_ICON_FOREGROUND
                       ), // TODO: check and create tooltip case in storybook

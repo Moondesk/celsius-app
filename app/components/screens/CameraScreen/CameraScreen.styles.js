@@ -1,6 +1,5 @@
 import { StyleSheet, Dimensions, Platform } from "react-native";
 import { getThemedStyle } from "../../../utils/styles-util";
-import STYLES from "../../../constants/STYLES";
 import { COLOR_KEYS } from "../../../constants/COLORS";
 
 const { height, width } = Dimensions.get("window");
@@ -44,26 +43,17 @@ const base = {
     padding: 16,
     backgroundColor: COLOR_KEYS.CARDS,
   },
+  maskOverlayColor: {
+    backgroundColor: COLOR_KEYS.CAMERA_OVERLAY,
+  },
 };
 
 const themed = {
-  light: {
-    maskOverlayColor: {
-      backgroundColor: "rgba(241,239,238,0.6)", // TODO: add COLOR_KEYS
-    },
-  },
+  light: {},
 
-  dark: {
-    maskOverlayColor: {
-      backgroundColor: STYLES.COLORS.DARK_OVERLAY, // TODO: add COLOR_KEYS
-    },
-  },
+  dark: {},
 
-  unicorn: {
-    maskOverlayColor: {
-      backgroundColor: "rgba(241,239,238,0.6)", // TODO: add COLOR_KEYS
-    },
-  },
+  unicorn: {},
 };
 
 const CameraScreenStyle = () => getThemedStyle(base, themed);

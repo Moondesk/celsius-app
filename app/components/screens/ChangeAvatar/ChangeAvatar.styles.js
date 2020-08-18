@@ -27,7 +27,7 @@ const base = {
   imageWrapper: {
     width: smallImageSize,
     height: smallImageSize,
-    borderColor: "transparent",
+    borderColor: COLOR_KEYS.TRANSPARENT,
     borderRadius: 50,
     borderWidth: 5,
     justifyContent: "center",
@@ -38,7 +38,7 @@ const base = {
     width: smallImageSize,
     height: smallImageSize,
     borderRadius: smallImageSize / 2,
-    borderColor: "transparent",
+    borderColor: COLOR_KEYS.TRANSPARENT,
     borderWidth: 5,
   },
   avatar: {

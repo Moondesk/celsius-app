@@ -130,15 +130,15 @@ class InfoBox extends Component {
                   style={{
                     width: 0,
                     height: 0,
-                    backgroundColor: "transparent",
+                    backgroundColor: COLOR_KEYS.TRANSPARENT,
                     borderStyle: "solid",
                     marginTop: heightPercentageToDP("0.5%"),
                     borderLeftWidth: widthPercentageToDP("1.5%"),
                     borderRightWidth: widthPercentageToDP("1.5%"),
                     borderBottomWidth: widthPercentageToDP("1.5%"),
-                    borderLeftColor: "transparent",
-                    borderRightColor: "transparent",
-                    borderBottomColor: "white",
+                    borderLeftColor: COLOR_KEYS.TRANSPARENT,
+                    borderRightColor: COLOR_KEYS.TRANSPARENT,
+                    borderBottomColor: COLOR_KEYS.WHITE,
                     transform: [{ rotate }],
                   }}
                 />

@@ -53,6 +53,11 @@ export const COLOR_KEYS = {
   CIRCLE_ICON_FOREGROUND: "circle_icon_foreground",
   CIRCLE_ICON_BACKGROUND: "circle_icon_background",
   INPUT_ICON: "input_icon",
+  TRANSPARENT: "transparent",
+  INPUT_BORDER: "input_border",
+  BLACK: "black",
+  WHITE: "white",
+  CAMERA_OVERLAY: "camera_overlay",
 };
 
 export const COLOR_FAMILY = {

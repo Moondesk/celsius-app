@@ -44,7 +44,7 @@ const base = {
   },
   animatedBackground: {
     position: "absolute",
-    backgroundColor: "transparent",
+    backgroundColor: COLOR_KEYS.TRANSPARENT,
     width,
     height,
   },

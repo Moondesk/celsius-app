@@ -20,7 +20,7 @@ const base = {
     flex: 4,
   },
   modal: {
-    backgroundColor: "white",
+    backgroundColor: COLOR_KEYS.WHITE,
     width: widthPercentageToDP("90%"),
     borderRadius: 8,
     zIndex: 3,
@@ -37,7 +37,7 @@ const base = {
     position: "absolute",
     top: 20,
     right: 20,
-    backgroundColor: "transparent",
+    backgroundColor: COLOR_KEYS.TRANSPARENT,
     zIndex: 10,
   },
   imageWrapper: {
@@ -92,7 +92,7 @@ const base = {
     width: widthPercentageToDP("28.8%"),
     height: widthPercentageToDP("28.8%"),
     borderRadius: widthPercentageToDP("28.8%") / 2,
-    backgroundColor: "white",
+    backgroundColor: COLOR_KEYS.WHITE,
     position: "absolute",
     justifyContent: "center",
     alignItems: "center",
@@ -111,7 +111,7 @@ const base = {
     alignItems: "center",
     alignContent: "flex-start",
     borderRadius: 25,
-    backgroundColor: "white",
+    backgroundColor: COLOR_KEYS.WHITE,
     marginBottom: 40,
   },
   title: {
@@ -128,7 +128,7 @@ const base = {
     textAlign: "center",
     alignItems: "center",
     justifyContent: "center",
-    color: "#737A82",
+    color: COLOR_KEYS.TOGGLE_OFF_BACKGROUND,
   },
   modalButton: {
     marginTop: 0,

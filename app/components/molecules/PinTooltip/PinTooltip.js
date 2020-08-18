@@ -79,9 +79,9 @@ class PinTooltip extends Component {
                 borderRightWidth: 10,
                 borderBottomWidth: 10,
                 borderStyle: "solid",
-                backgroundColor: "transparent",
-                borderLeftColor: "transparent",
-                borderRightColor: "transparent",
+                backgroundColor: getColor(COLOR_KEYS.TRANSPARENT),
+                borderLeftColor: getColor(COLOR_KEYS.TRANSPARENT),
+                borderRightColor: getColor(COLOR_KEYS.TRANSPARENT),
                 borderBottomColor: STYLES.COLORS.DARK_GRAY, // TODO: missing COLOR_KEY
                 transform: [
                   {
