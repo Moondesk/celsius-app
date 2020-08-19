@@ -92,6 +92,9 @@ class PinTooltip extends Component {
             />
 
             <View style={[style.container, customStyle]}>
+              <CelText color={COLOR_KEYS.WHITE} margin={"0 0 10 0"}>
+                PIN Must:
+              </CelText>
               {this.handleSecurityItems().map((i, k) => (
                 <View style={style.securityStrengthItem} k={k}>
                   <Icon
