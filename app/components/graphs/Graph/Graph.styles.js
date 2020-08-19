@@ -47,8 +47,8 @@ const base = {
     borderLeftWidth: widthPercentageToDP("1.5%"),
     borderRightWidth: widthPercentageToDP("1.5%"),
     borderBottomWidth: widthPercentageToDP("1.5%"),
-    borderLeftColor: COLOR_KEYS.TRANSPARENT,
-    borderRightColor: COLOR_KEYS.TRANSPARENT,
+    borderLeftColor: COLOR_KEYS.BACKGROUND,
+    borderRightColor: COLOR_KEYS.BACKGROUND,
     borderBottomColor: COLOR_KEYS.CARDS,
     transform: [{ rotate: "180deg" }],
   },
@@ -60,7 +60,7 @@ const base = {
     right: 0,
   },
   cursorBackgroundColor: {
-    backgroundColor: COLOR_KEYS.CARDS,
+    backgroundColor: "red",
   },
   labelBoxBackgroundColor: {},
 };
