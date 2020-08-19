@@ -164,7 +164,7 @@ class InterestCalculator extends Component {
       <View style={style.showInterestWrapper}>
         {formData.coin !== "CEL" && (
           <CelText align={"center"} margin="20 0 5 0">
-            Choose how you want to earn interest.
+            Choose how you want to earn rewards.
           </CelText>
         )}
 
@@ -248,7 +248,7 @@ class InterestCalculator extends Component {
                   })}
             </CelText>
             <CelText type="H6" align={"center"}>
-              Interest per week
+              Rewards per week
             </CelText>
           </Card>
           <Card color={getColor(COLOR_KEYS.BACKGROUND)} margin="20 20 20 20">
@@ -267,7 +267,7 @@ class InterestCalculator extends Component {
                   })}
             </CelText>
             <CelText type="H6" align={"center"}>
-              Interest per year
+              Rewards per year
             </CelText>
           </Card>
         </View>

@@ -64,7 +64,7 @@ class RegisterPromoCodeCard extends Component {
               weight={"300"}
               color={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
             >
-              3. Deposit $200 or more worth of coins to your Celsius wallet
+              3. Transfer $200 or more worth of coins to your Celsius wallet
             </CelText>
           </View>
         </View>
@@ -115,7 +115,7 @@ class RegisterPromoCodeCard extends Component {
             weight={"300"}
             color={getColor(COLOR_KEYS.PRIMARY_BUTTON_FOREGROUND)}
           >
-            3. Deposit $200 or more worth of coins to your Celsius wallet
+            3. Transfer $200 or more worth of coins to your Celsius wallet
           </CelText>
           <View style={{ alignItems: "flex-start" }}>
             <CelButton
