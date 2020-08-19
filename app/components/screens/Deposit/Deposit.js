@@ -56,7 +56,7 @@ class Deposit extends Component {
   constructor(props) {
     super(props);
 
-    const { depositCompliance, currencies, actions, navigation } = props;
+    const { depositCompliance, currencies } = props;
 
     const coinSelectItems =
       currencies &&
@@ -67,9 +67,6 @@ class Deposit extends Component {
           value: c.short,
         }));
 
-    const currencyFromNav = navigation.getParam("coin");
-    actions.updateFormField("selectedCoin", currencyFromNav || "ETH");
-
     this.state = {
       isFetchingAddress: false,
       useAlternateAddress: false,
@@ -77,12 +74,15 @@ class Deposit extends Component {
     };
   }
 
-  componentDidMount() {
-    const { actions } = this.props;
+  componentDidMount = async () => {
+    const { actions, navigation } = this.props;
+    const currencyFromNav = navigation.getParam("coin");
+    actions.updateFormField("selectedCoin", currencyFromNav || "ETH");
+    await this.fetchAddress(currencyFromNav || "ETH");
     setTimeout(() => {
       actions.openModal(MODALS.DEPOSIT_INFO_MODAL);
     }, 1000);
-  }
+  };
 
   getAddress = currency => {
     const { walletAddresses } = this.props;
@@ -255,7 +255,7 @@ class Deposit extends Component {
     }
 
     return (
-      <Card color={getColor(COLOR_KEYS.LINK)}>
+      <Card color={getColor(COLOR_KEYS.INK)}>
         <CelText
           style={style.infoBubble}
           weight="300"
